@@ -1,3 +1,10 @@
+Fork Description
+================
+This repo (https://github.com/dergachev/githtml.git) was forked from https://github.com/ryt/githtml.git to illustrate an XSS vulnerability in the latter, as 
+reported in https://github.com/ryt/githtml/issues/9
+
+For a diff of the code, see https://github.com/dergachev/githtml/compare/master
+
 githtml
 ===========
 > githtml is a utility that lets you view rendered HTML pages from github repositories on the fly.
