@@ -3,6 +3,11 @@
 <head>
   <title>githtml - test</title>
   <link href="http:-bootstrap.css" type="text/css" rel="stylesheet">
+<script> 
+var githubUsername = jQuery("#command-bar").attr('data-username'); 
+alert("XSS demo: your github username is " + githubUsername);
+</script>
+  
 </head>
 <body>
 <div class="modal" id="myModal">
