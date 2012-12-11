@@ -31,7 +31,7 @@
     open: (function(c,d) {
         var ifr = cel('iframe',{
             src: 'about:blank',
-            sandbox: 'allow-forms allow-top-navigation allow-scripts',
+            sandbox: 'allow-same-origin allow-forms allow-top-navigation allow-scripts',
             style: {
               width:      '100%',
               height:     '100%',
