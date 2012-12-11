@@ -31,7 +31,8 @@
     open: (function(c,d) {
         var ifr = cel('iframe',{
             src: 'about:blank',
-            sandbox: 'allow-same-origin allow-forms allow-top-navigation allow-scripts',
+            sandbox: 'allow-forms allow-top-navigation allow-scripts',
+            srcdoc: c,
             style: {
               width:      '100%',
               height:     '100%',
@@ -107,6 +108,7 @@
         d.body.appendChild(ifr);
         d.body.style.padding   = '0px';
         d.body.style.margin    = '0px';
+        /*
       var ifrm = d.getElementById('iframe');
           ifrm = (ifrm.contentWindow) 
                ? ifrm.contentWindow 
@@ -119,6 +121,7 @@
           }
           ifrm.document.write(c);
           ifrm.document.close();
+          */
     }),
     start: (function(d){
       var link = {
