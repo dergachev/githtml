@@ -3,6 +3,15 @@ Fork Description
 This repo (https://github.com/dergachev/githtml.git) was forked from https://github.com/ryt/githtml.git to illustrate an XSS vulnerability in the latter, as 
 reported in https://github.com/ryt/githtml/issues/9
 
+To try the potentially more secure version of githtml.js, add a bookmarklet using the following URL:
+
+
+```javascript
+javascript:(function(){var d=document,s=d.createElement('script');s.src='//raw.github.com/dergachev/githtml/master/githtml.js';d.body.appendChild(s);})();
+```
+
+
+
 For a diff of the code, see https://github.com/dergachev/githtml/compare/master
 
 githtml
