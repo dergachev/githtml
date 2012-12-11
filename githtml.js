@@ -31,13 +31,14 @@
     open: (function(c,d) {
         var ifr = cel('iframe',{
             src: 'about:blank',
+            sandbox: 'allow-forms allow-top-navigation allow-scripts',
             style: {
               width:      '100%',
               height:     '100%',
               position:   'absolute',
               top:        '0px',
               zIndex:     '9999',
-              background: '#fff'
+              background: '#fff',
             },
             id:  'iframe'
         }, false);
